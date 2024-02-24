@@ -3,10 +3,10 @@
 :root {
 	--body-font: 'Urbanist', sans-serif;
 	
-	--theme-colour: #D33257;
-	--theme-colour-light: #F05377;
-	--theme-colour-lighter: #EB8FA4;
-	--secondary-colour: #EFC800;
+	--theme-colour: #FE4A23;
+	--theme-colour-darker: #0D0D0D;
+	--secondary-colour: #FFD027;
+	--font-colour: #F9F9F9;
 
 	--h-padding: 25px;
 	--v-padding: 15px;
@@ -16,7 +16,7 @@
 /* Typography ****************************** */
 
 html {
-	font-size: 62.5%;
+	font-size: 100%;
 }
 
 body {
@@ -28,16 +28,17 @@ body {
 }
 
 h1 {
-	font-size: 68px;
-	text-align: center;
-	line-height: 1;
+	font-size: 3.5em;
+	font-weight: 600;
+}
 
-	/* width: 100%; */
+h2 {
+	font-size: 2.5em;
+	font-weight: 500;
 }
 
 p {
-	display: block;
-	margin-bottom: 1em;
+	font-size: 0.875em;
 }
 
 em {
@@ -59,19 +60,4 @@ main {
 	margin: 30px;
 	margin: 10vh 10vw;
 	max-width: 600px;
-}
-
-.social a {
-	margin-right: 0.6em;
-}
-
-.list {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	list-style: disc;
-	list-style-position: inside;
-}
-
-.list li {
-	margin-bottom: 0.5em;
 }
