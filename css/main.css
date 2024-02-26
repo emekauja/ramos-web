@@ -27,15 +27,18 @@ body {
   font-size: 0.875em;
   font-weight: 400;
   line-height: 1.4;
+  color: var(--text-color);
 }
 
 h1 {
-  font-size: 3.5em;
-  font-weight: 600;
+  font-size: max(5.6rem, 20px);
+  /* font-weight: 600; */
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 500;
 }
 
@@ -62,12 +65,45 @@ button {
   border: none;
 }
 
+h1 > span {
+  /* text-align: center; */
+}
+
 /* Layout ****************************** */
 
-main {
-  margin: 30px;
-  margin: 10vh 10vw;
-  max-width: 600px;
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 #nav-container {
@@ -84,7 +120,7 @@ main {
 /* Content ****************************** */
 
 .header {
-  margin: 0.75rem 1.5rem;
+  margin: 0.75rem 1.5rem 2rem 1.5rem;
 }
 
 .header-container {
@@ -94,6 +130,7 @@ main {
   background: var(--text-color);
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   border-radius: 1.25rem;
+  position: relative;
 }
 
 .header-logo img,
@@ -157,4 +194,46 @@ main {
 .btn-secondary:active {
   color: var(--text-color);
   background: var(--font-color);
+}
+
+.hero {
+  width: max-content;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-top,
+.hero-middle,
+.hero-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.hero-right {
+  position: absolute;
+  left: 590px;
+  top: 12px;
+}
+
+.hero-right__container {
+  position: relative;
+}
+
+.hero-top {
+  margin-left: 6rem;
+}
+.hero-bottom {
+  margin-left: 12rem;
+}
+
+.hero-middle h1 > span {
+  opacity: 0.25;
+}
+
+.hero-right__container > svg {
+  position: absolute;
+  top: -16px;
+  left: -16px;
 }
