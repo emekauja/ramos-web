@@ -4,6 +4,8 @@ const observer = new IntersectionObserver((entries) => {
     console.log('entry ==>', entry);
     if (entry.isIntersecting) {
       entry.target.classList.add('animate');
+    } else {
+      entry.target.classList.remove('animate');
     }
   });
 });
