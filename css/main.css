@@ -19,11 +19,14 @@
   --space: 1rem;
 }
 
-/* Typography ****************************** */
-
-html {
-  font-size: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+  }
 }
+
+/* Typography ****************************** */
 
 body {
   font-family: var(--body-font);
